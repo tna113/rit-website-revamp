@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- g fonts -->
+    <!-- 'Raleway', sans-serif -->
+    <!-- 'Poppins', sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&family=Raleway:ital,wght@0,100;0,400;0,800;0,900;1,900&display=swap" rel="stylesheet">
+
+    <!-- include latest version of jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- PLUGIN1 for nav hover -->
+    <script src="./js/teskly.viewitle.js"></script>
+
+    <!-- PLUGIN2 for employers -->
+    <script src="./js/billboard-0.1.1.js"></script>
+
+
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RIT | IST Department</title>
+</head>
+
+<body>
+    <div id="spinnerBox"></div>
+    <div class="container">
+        <div class="left">
+            <!-- PLUGIN1
+            https://www.jqueryscript.net/tooltip/Minimalist-Animated-Hover-Tooltip-Plugin-with-jQuery-Viewitle.html -->
+
+            <!-- LATER: as user scrolls, nav link to section sticks to the menu, also fix plugin1 so the position of the pop up wont be dependent on scroll -->
+
+            <ul>
+                <img id="logo" src="./img/logo_orange.png" alt="">
+                <li><a href="#about" data-teskly-viewitle="Some information about Rochester Institute of Technology.">about us</a></li>
+                <li><a href="#degrees" data-teskly-viewitle="Information about Undergraduate and Graduate degrees offered at RIT.">degrees</a></li>
+                <li><a href="#minors" data-teskly-viewitle="An informative list regarding RIT's offered minors.">minors</a></li>
+                <li><a href="#course" data-teskly-viewitle="A complete list of the courses offered at RIT.">courses</a></li>
+                <li><a href="#employment" data-teskly-viewitle="Details regarding professional employment.">employment</a></li>
+                <li><a href="#coop" data-teskly-viewitle="A searchable table regarding RIT's Co-Op opportunities.">co-ops</a></li>
+                <li><a href="#people" data-teskly-viewitle="A complete list of faculty and staff working at RIT.">people</a></li>
+            </ul>
+        </div>
+        <div class="right">
+
+            <div id="about"></div>
+
+            <!-- LATER: fix alignment of icons & text -->
+            <div id="degrees">
+                <h2>┏━━━━━━━ undergraduate degrees ━━━━━━━┓ </h2>
+                <div id="undergraduate"></div>
+                <div id="graduate"></div>
+                <h2>┕━━━━━━━━━ graduate degrees ━━━━━━━━━┛</h2>
+            </div>
+
+            <div id="minors">
+                <h2>minors</h2>
+                <p>Hover over each title to see more detail.</p>
+            </div>
+
+            <!-- LATER: user clicks again to close, collapsible, use datadash asdkfkasdjflkasjdlf -->
+            <!-- LATER: FIX WEIRD ANIMATION DELAYS? -->
+            <div id="course">
+                <h2>courses</h2>
+                <p>Click a title to see more detail.</p>
+            </div>
+
+            <!-- PLUGIN2 
+            https://www.jqueryscript.net/demo/Simple-Text-Rotation-Plugin-billboard/ -->
+            <div id="employment">
+                <h1>CAREERS & EMPLOYERS</h1>
+                <blockquote>
+                    <span id="employment_card">Developer at Paychex</span>
+                </blockquote>
+            </div>
+
+            <div id="coop">
+                <h2>co-ops</h2>
+                <p>-- Co-op table coming soon --</p>
+            </div>
+
+
+            <!-- PLUGIN3 https://www.cssscript.com/image-caption-hover-animations-with-css3-transitions-and-transforms/ -->
+            <div id="people">
+                <h2>people</h2>
+                <div>
+                    <h1>FACULTY</h1>
+                    <div class="container-a1">
+                        <ul class="caption-style-1" id="faculty">
+                            <!-- <li>
+                                <img src="./img/gradient.jpg" alt="">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Amazing Caption</h1>
+                                        <p>Whatever It Is - Always Awesome</p>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 style="margin-top: 100px;">STAFF</h1>
+                    <div class="container-a1">
+                        <ul class="caption-style-1" id="staff"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Created By Thea Arias. Taken from RIT's API. All rights reserved.
+    </footer>
+    <!-- LATER: Make a footer ..... kinda important -->
+</body>
+
+</html>
